@@ -26,7 +26,7 @@
     
 * **Sample Call:**
 
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"dogName\": \"Babe\", \"dogBreed\": \"Rotweiler\", \"dogDOB\": \"2017-10-02\"}" "http://ec2-54-242-96-177.compute-1.amazonaws.com:8080/dog-daycare-api/addDog"
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"dogName\": \"Babe\", \"dogBreed\": \"Rotweiler\", \"dogDOB\": \"2017-10-02\"}" "http://localhost:8080/addDog"
 
 * **Notes:**
 
@@ -58,7 +58,7 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
     
 * **Sample Call:**
 
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"lastName\": \"Richard\", \"firstName\": \"Keith\", \"phoneNumber\": \"415-101-0280\",\"email\": \"richardsk@email.com\"}" "http://ec2-54-242-96-177.compute-1.amazonaws.com:8080/dog-daycare-api/addDogOwner"
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"lastName\": \"Richard\", \"firstName\": \"Keith\", \"phoneNumber\": \"415-101-0280\",\"email\": \"richardsk@email.com\"}" "http://localhost:8080/addDogOwner"
 
 * **Notes:**
 
@@ -89,7 +89,7 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
     
 * **Sample Call:**
 
-  curl http://ec2-54-242-96-177.compute-1.amazonaws.com:8080/dog-daycare-api/displayDogs
+  curl http://localhost:8080/displayDogs
 
 * **Notes:**
 
@@ -120,7 +120,7 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
     
 * **Sample Call:**
 
-  curl http://ec2-54-242-96-177.compute-1.amazonaws.com:8080/dog-daycare-api/displayDogOwners
+  curl http://localhost:8080/displayDogOwners
   
 * **Notes:**
 
@@ -152,5 +152,5 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
     
 * **Sample Call:**
 
-  curl http://ec2-54-242-96-177.compute-1.amazonaws.com:8080/dog-daycare-api/displayDogOwnersAndDogs
+  curl http://localhost:8080/displayDogOwnersAndDogs
 * **Notes:**
