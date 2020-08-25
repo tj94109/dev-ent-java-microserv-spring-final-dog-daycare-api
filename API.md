@@ -58,7 +58,7 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
     
 * **Sample Call:**
 
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"lastName\": \"Richard\", \"firstName\": \"Keith\", \"phoneNumber\": \"415-101-0280\",\"email\": \"richardsk@email.com\"}" "http://localhost:8080/addDogOwner"
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"lastName\": \"Richard\", \"firstName\": \"Keith\", \"phoneNumber\": \"000-000-0000\",\"email\": \"<insert email>\"}" "http://localhost:8080/addDogOwner"
 
 * **Notes:**
 
