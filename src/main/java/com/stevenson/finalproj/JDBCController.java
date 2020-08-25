@@ -40,7 +40,7 @@ public class JDBCController {
 
     @CrossOrigin
     @RequestMapping(value = "/displayDogs", method = RequestMethod.GET)
-    public String displayDog() {
+    public String displayDogs() {
         JdbcTemplate jdbcTemplate = JDBCConnector.getJdbcTemplate();
         StringBuilder resultStr = new StringBuilder();
 
@@ -54,7 +54,7 @@ public class JDBCController {
                     .append(sqlRowSet.getString("dog_DOB"))
                     .append("\n");
         }
-        return ("DOG RESIDENT LIST:\n" + resultStr);
+        return ("DOG RESIDENT LIST:\n" + resultStr + "\n");
     }
 
     @CrossOrigin
@@ -74,7 +74,7 @@ public class JDBCController {
                     .append(sqlRowSet.getString("dog_name")).append(" , ")
                     .append("\n");
         }
-        return ("DOG Owner and dog:\n" + resultStr);
+        return ("DOG Owner and dog:\n" + resultStr + "\n");
     }
 
 
@@ -90,7 +90,7 @@ public class JDBCController {
                 "'" + addDogOwnerData.getEmail() + "'" +
                 ");";
         int rowsUpdated = jdbcTemplate.update(queryStr);
-        return ("Dog owner to database: " + rowsUpdated);
+        return ("Added dog owner to database: " + rowsUpdated + "\n");
     }
 
     @CrossOrigin
@@ -104,6 +104,6 @@ public class JDBCController {
                 "'" + addDog.getDogDOB() + "'" +
                 ");";
         int rowsUpdated = jdbcTemplate.update(queryStr);
-        return ("Dog Added to Dog Database: " + rowsUpdated);
+        return ("Dog Added to Dog Database: " + rowsUpdated + "\n");
     }
 }
