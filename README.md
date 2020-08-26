@@ -5,6 +5,8 @@ Using the Spring Framework I created two POST and three GET microservices that i
   dog_owner: owner_id(primary key), owner_last_name, owner_first_name, owner_phone, and owner_email. 
   dog table: dog_id, dog_name, dog_breed, dog_dob, and owner_id(foreign key). 
 
+
+
 The "addDog' REST API microservice interacts with a mysql database by adding a dog record to the "dog" table of the dog_daycare_db.  
 
   Sample:
@@ -19,6 +21,8 @@ The "addDog' REST API microservice interacts with a mysql database by adding a d
 
 Dog Added to Dog Database: 1
 
+
+
 The "addDogOwner" service completes a similar task but instead adds an dog owner record to the the dog_owner table.  
 
   Sample:
@@ -32,9 +36,10 @@ The "addDogOwner" service completes a similar task but instead adds an dog owner
 
   Added dog owner to database: 1
 
-There are three GET microservices which retrieve lists of entries from the tables.  
 
-The "displayDogs" retrieves a list of all dog entries from the dog table and the "displayDogOwners" service returns a list of all the the dog owners from the dog_owner table.  
+
+
+There are three GET microservices which retrieve lists of entries from the tables. The "displayDogs" retrieves a list of all dog entries from the dog table and the "displayDogOwners" service returns a list of all the the dog owners from the dog_owner table.  
 
   Sample:
   curl http://ec2-54-242-96-177.compute-1.amazonaws.com:8080/dog-daycare-api/displayDogs
@@ -70,6 +75,8 @@ The "displayDogs" retrieves a list of all dog entries from the dog table and the
   10, Richard, Keith, 415-101-0280, richardsk@email.com, 
   11, Richard, Keith, 415-101-0280, richardsk@email.com, 
   12, Jones, Bob, 415-999-0280, jonesk@email.com, 
+
+
 
 The displayDogOwnersAndDogs service retrieves a joined table that lists dog_owner and matching dog record from both tables.
   Sample:
