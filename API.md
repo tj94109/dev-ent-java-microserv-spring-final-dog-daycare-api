@@ -9,8 +9,6 @@
 * **Method:**
   
   POST
-
-  `GET` | `POST` | `DELETE` | `PUT`
   
 * **Success Response:**
   
@@ -41,8 +39,6 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
 * **Method:**
   
   POST
-
-  `GET` | `POST` | `DELETE` | `PUT`
   
 * **Success Response:**
   
@@ -74,8 +70,6 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
 * **Method:**
   
   GET
-
-  `GET` | `POST` | `DELETE` | `PUT`
   
 * **Success Response:**
   
@@ -106,7 +100,6 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
   
   GET
 
-  `GET` | `POST` | `DELETE` | `PUT`
   
 * **Success Response:**
   
@@ -137,8 +130,6 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
 * **Method:**
   
   GET
-
-  `GET` | `POST` | `DELETE` | `PUT`
   
 * **Success Response:**
   
